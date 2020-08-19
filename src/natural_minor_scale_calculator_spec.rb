@@ -1,8 +1,8 @@
-require "./harmonic_minor_scale_calculator"
-require "./note"
-require "./chromatic_scale"
+require_relative "./natural_minor_scale_calculator"
+require_relative "./note"
+require_relative "./chromatic_scale"
 
-describe HarmonicMinorScaleCalculator do
+describe NaturalMinorScaleCalculator do
 
     describe "#for_root_note" do
 
@@ -15,10 +15,10 @@ describe HarmonicMinorScaleCalculator do
             expect(scale_calculator).to receive(:scale_for).with(
                    root_note,
                    ChromaticScale::NOTES,
-                   HarmonicMinorScaleCalculator::HARMONIC_MINOR_SCALE_STEPS
+                   NaturalMinorScaleCalculator::NATURAL_MINOR_SCALE_STEPS
                ) { scale_calculator_result }
 
-            minor_scale_calculator = HarmonicMinorScaleCalculator.new(scale_calculator)
+            minor_scale_calculator = NaturalMinorScaleCalculator.new(scale_calculator)
             result = minor_scale_calculator.for_root_note(root_note)
 
             expect(result).to be(scale_calculator_result)
@@ -37,10 +37,10 @@ describe HarmonicMinorScaleCalculator do
                 expect(scale_calculator).to receive(:scale_for).with(
                        minor_root_note,
                        ChromaticScale::NOTES,
-                       HarmonicMinorScaleCalculator::HARMONIC_MINOR_SCALE_STEPS
+                       NaturalMinorScaleCalculator::NATURAL_MINOR_SCALE_STEPS
                    ) { scale_calculator_result }
 
-                minor_scale_calculator = HarmonicMinorScaleCalculator.new(scale_calculator)
+                minor_scale_calculator = NaturalMinorScaleCalculator.new(scale_calculator)
                 result = minor_scale_calculator.for_relative_major_root_note(relative_major_root_note)
 
                 expect(result).to be(scale_calculator_result)

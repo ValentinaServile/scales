@@ -1,6 +1,6 @@
-require './scale_calculator'
-require './note'
-require './scale_steps'
+require_relative './scale_calculator'
+require_relative './note'
+require_relative './scale_steps'
 
 describe ScaleCalculator do
 

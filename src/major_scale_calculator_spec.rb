@@ -1,6 +1,6 @@
-require "./major_scale_calculator"
-require "./note"
-require "./chromatic_scale"
+require_relative "./major_scale_calculator"
+require_relative "./note"
+require_relative "./chromatic_scale"
 
 describe MajorScaleCalculator do
 

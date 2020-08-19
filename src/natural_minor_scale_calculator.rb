@@ -1,5 +1,5 @@
-require "./chromatic_scale"
-require "./scale_steps"
+require "./src/chromatic_scale"
+require "./src/scale_steps"
 
 class NaturalMinorScaleCalculator
 

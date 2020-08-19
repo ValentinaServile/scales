@@ -1,9 +1,9 @@
-require "./major_scale_calculator"
-require "./natural_minor_scale_calculator"
-require "./harmonic_minor_scale_calculator"
-require "./melodic_minor_scale_calculator"
-require "./scale_calculator"
-require "./chromatic_scale"
+require "./src/major_scale_calculator"
+require "./src/natural_minor_scale_calculator"
+require "./src/harmonic_minor_scale_calculator"
+require "./src/melodic_minor_scale_calculator"
+require "./src/scale_calculator"
+require "./src/chromatic_scale"
 
 
 puts "Give me a note"
