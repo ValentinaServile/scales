@@ -1,5 +1,6 @@
 require_relative "./chromatic_scale"
 require_relative "./scale_steps"
+require_relative "./scale_calculator"
 
 class NaturalMinorScaleCalculator
 
@@ -13,7 +14,7 @@ class NaturalMinorScaleCalculator
        ScaleSteps::TONE
     ]
 
-    def initialize(scale_calculator)
+    def initialize(scale_calculator = ScaleCalculator.new)
        @scale_calculator = scale_calculator
     end
 
