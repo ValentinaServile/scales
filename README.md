@@ -8,10 +8,10 @@ Run
 
 `brew tap valentinaservile/scales && brew install scales`
 
-#Usage
+# Usage
 
 Coming soon
 
-#But why?
+# But why?
 
 Was trying to get my head around some basic music theory, so I made a little ruby program to validate my understanding. Thought it would be nice to share :)  
