@@ -1,5 +1,5 @@
-require_relative "./all_scales_for_note_use_case"
-require_relative "./all_scales_for_note_console_printer"
+require_relative "./usecases/all_scales_for_note_use_case"
+require_relative "./output/all_scales_for_note_console_printer"
 
 def main
 

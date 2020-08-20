@@ -1,6 +1,6 @@
-require_relative "./major_scale_calculator"
-require_relative "./note"
-require_relative "./chromatic_scale"
+require_relative "../services/major_scale_calculator"
+require_relative "../entities/note"
+require_relative "../entities/chromatic_scale"
 
 describe MajorScaleCalculator do
 

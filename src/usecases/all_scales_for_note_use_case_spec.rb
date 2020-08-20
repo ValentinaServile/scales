@@ -1,9 +1,9 @@
-require_relative "./all_scales_for_note_use_case"
-require_relative "./major_scale_calculator"
-require_relative "./natural_minor_scale_calculator"
-require_relative "./harmonic_minor_scale_calculator"
-require_relative "./melodic_minor_scale_calculator"
-require_relative "./note"
+require_relative "../usecases/all_scales_for_note_use_case"
+require_relative "../services/major_scale_calculator"
+require_relative "../services/natural_minor_scale_calculator"
+require_relative "../services/harmonic_minor_scale_calculator"
+require_relative "../services/melodic_minor_scale_calculator"
+require_relative "../entities/note"
 
 describe AllScalesForNoteUseCase do
 

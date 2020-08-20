@@ -1,4 +1,4 @@
-require_relative "./all_scales_for_note_use_case"
+require_relative "../usecases/all_scales_for_note_use_case"
 
 class AllScalesForNoteConsolePrinter
 

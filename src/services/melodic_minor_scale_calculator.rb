@@ -1,6 +1,6 @@
-require_relative "./chromatic_scale"
-require_relative "./scale_steps"
-require_relative "./scale_calculator"
+require_relative "../entities/chromatic_scale"
+require_relative "../entities/scale_steps"
+require_relative "../services/scale_calculator"
 
 class MelodicMinorScaleCalculator
 

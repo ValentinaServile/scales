@@ -1,8 +1,8 @@
-require_relative "./major_scale_calculator"
-require_relative "./natural_minor_scale_calculator"
-require_relative "./harmonic_minor_scale_calculator"
-require_relative "./melodic_minor_scale_calculator"
-require_relative "./chromatic_scale"
+require_relative "../services/major_scale_calculator"
+require_relative "../services/natural_minor_scale_calculator"
+require_relative "../services/harmonic_minor_scale_calculator"
+require_relative "../services/melodic_minor_scale_calculator"
+require_relative "../entities/chromatic_scale"
 
 class AllScalesForNoteUseCaseResult
     attr_reader :major_scale, :natural_minor_scale, :harmonic_minor_scale, :melodic_minor_scale

@@ -1,6 +1,6 @@
-require_relative "./melodic_minor_scale_calculator"
-require_relative "./note"
-require_relative "./chromatic_scale"
+require_relative "../services/melodic_minor_scale_calculator"
+require_relative "../entities/note"
+require_relative "../entities/chromatic_scale"
 
 describe MelodicMinorScaleCalculator do
 
