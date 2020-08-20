@@ -1,4 +1,4 @@
-require "./src/note"
+require_relative "./note"
 
 class ChromaticScale
     NOTES = [

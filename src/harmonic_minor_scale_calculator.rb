@@ -1,5 +1,5 @@
-require "./src/chromatic_scale"
-require "./src/scale_steps"
+require_relative "./chromatic_scale"
+require_relative "./scale_steps"
 
 class HarmonicMinorScaleCalculator
 
