@@ -15,6 +15,7 @@ tar \
   --exclude=".gitignore" \
   --exclude=".ruby-version" \
   --exclude=".git" \
+  --exclude="*.md" \
   --exclude="*.tar.gz" \
   -czvf \
   "scales-$VERSION.tar.gz" \
