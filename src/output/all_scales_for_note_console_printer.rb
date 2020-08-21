@@ -7,18 +7,18 @@ class AllScalesForNoteConsolePrinter
             puts result.reason
             exit 1
         elsif result.is_a? AllScalesForNoteUseCaseResult
-            puts "====== Major scale: ========="
+            puts "========== Major scale: ==============\n\n"
             puts result.major_scale.join(" ")
 
-            puts "====== Relative minor scales: ========"
+            puts "\n====== Relative minor scales: ========"
 
-            puts "Natural minor:"
+            puts "\nNatural minor:"
             puts result.natural_minor_scale.join(" ")
 
-            puts "Harmonic minor:"
+            puts "\nHarmonic minor:"
             puts result.harmonic_minor_scale.join(" ")
 
-            puts "Melodic minor:"
+            puts "\nMelodic minor:"
             puts result.melodic_minor_scale.join(" ")
         end
 
