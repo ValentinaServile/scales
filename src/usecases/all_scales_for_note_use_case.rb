@@ -57,10 +57,6 @@ class AllScalesForNoteUseCase
     end
 
     def execute (root_note)
-        if not ChromaticScale::NOTES.include?(root_note)
-          return AllScalesForNoteUseCaseError.new(reason = "#{root_note} is not a valid note")
-        end
-
         AllScalesForNoteUseCaseResult.new(
             major_scale = @major_scale_calculator.for_root_note(root_note),
             minor_scale = @minor_scale_calculator.for_root_note(root_note),

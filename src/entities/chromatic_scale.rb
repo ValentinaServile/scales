@@ -17,4 +17,9 @@ class ChromaticScale
         Note.new("B"),
         #No semitone here
     ]
+
+    def self.find_note(note_string)
+        ChromaticScale::NOTES.find { |note| note.name == note_string || note.sharp_notation == note_string || note.flat_notation == note_string }
+    end
+
 end
