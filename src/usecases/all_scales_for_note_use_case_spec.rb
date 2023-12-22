@@ -38,11 +38,13 @@ describe AllScalesForNoteUseCase do
         it "should return result with all scales when valid note" do
             calculator_result = []
             major_scale_calculator = instance_double("MajorScaleCalculator")
+            minor_scale_calculator = instance_double("MinorScaleCalculator")
             natural_minor_scale_calculator = instance_double("NaturalMinorScaleCalculator")
             harmonic_minor_scale_calculator = instance_double("HarmonicMinorScaleCalculator")
             melodic_minor_scale_calculator = instance_double("MelodicMinorScaleCalculator")
 
             expect(major_scale_calculator).to receive(:for_root_note).with(valid_note) { calculator_result }
+            expect(minor_scale_calculator).to receive(:for_root_note).with(valid_note) { calculator_result }
             expect(natural_minor_scale_calculator).to receive(:for_relative_major_root_note).with(valid_note) { calculator_result }
             expect(harmonic_minor_scale_calculator).to receive(:for_relative_major_root_note).with(valid_note) { calculator_result }
             expect(melodic_minor_scale_calculator).to receive(:for_relative_major_root_note).with(valid_note) { calculator_result }
@@ -50,6 +52,7 @@ describe AllScalesForNoteUseCase do
 
             usecase = AllScalesForNoteUseCase.new(
                 major_scale_calculator,
+                minor_scale_calculator,
                 natural_minor_scale_calculator,
                 harmonic_minor_scale_calculator,
                 melodic_minor_scale_calculator,
@@ -59,6 +62,7 @@ describe AllScalesForNoteUseCase do
 
             expect(result).to eq(AllScalesForNoteUseCaseResult.new(
                 major_scale = calculator_result,
+                minor_scale = calculator_result,
                 natural_minor_scale = calculator_result,
                 harmonic_minor_scale = calculator_result,
                 melodic_minor_scale = calculator_result,

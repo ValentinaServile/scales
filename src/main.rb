@@ -24,11 +24,7 @@ def parse_options
     begin
         OptionParser.new do |opts|
           opts.banner =
-"Scales
-
-Usage:
-    scales (a | --all) <note>
-    scales -h | --help
+"Usage: scales -a <root-note>
 
 Options:
 "

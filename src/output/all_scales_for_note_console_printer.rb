@@ -10,6 +10,9 @@ class AllScalesForNoteConsolePrinter
             puts "========== Major scale: ==============\n\n"
             puts result.major_scale.join(" ")
 
+            puts "========== Minor scale: ==============\n\n"
+            puts result.minor_scale.join(" ")
+
             puts "\n====== Relative minor scales: ========"
 
             puts "\nNatural minor:"
